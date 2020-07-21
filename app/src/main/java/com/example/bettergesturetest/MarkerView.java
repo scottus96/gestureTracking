@@ -24,9 +24,7 @@ public class MarkerView extends View {
         // Bitmap is used to draw image on screen - currently set to a picture of my face
         Bitmap b1 = BitmapFactory.decodeResource(getResources(), R.drawable.circle_icon);
         Bitmap b = Bitmap.createScaledBitmap(b1, RADIUS,RADIUS, false);
-        Bitmap b2 = BitmapFactory.decodeResource((getResources(), R.drawable.br));
-        Bitmap bb = Bitmap.createScaledBitmap(b2, RADIUS,RADIUS,false);
-        Bitmap b3 = BitmapFactory.decodeResource(getResources(), R.drawable.)
+        Bitmap b2 = BitmapFactory.decodeResource(getResources(), R.drawable.br);
 
         HashMap<Integer, Marker> MarkerList = new HashMap<Integer, Marker>();
         private Paint paint;

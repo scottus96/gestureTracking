@@ -9,21 +9,21 @@
  **************************************************************************************************/
 
 //Tell me where to find my files:
-package edu.slu.azeiss.linefollowing2;
+package com.example.bettergesturetest;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class SelectionMain extends AppCompatActivity{
+public class SelectionMain extends AppCompatActivity {
 
     //Participant # from MainActivity:
-    static int num = MainActivity.getNumber();
+    //static int num = MainActivity.getNumber();
 
-    static ControlController controlController;
-    static ExtraController extraController;
+    //static ControlController controlController;
+    //static ExtraController extraController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +34,8 @@ public class SelectionMain extends AppCompatActivity{
         Button control = (Button) findViewById(R.id.control_button);
         control.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                controlController = new ControlController(num);
-                startActivity(new Intent(getApplicationContext(), ControlActivity.class));
+                //controlController = new ControlController(num);
+                //startActivity(new Intent(getApplicationContext(), ControlActivity.class));
             }
         });
 
@@ -43,15 +43,15 @@ public class SelectionMain extends AppCompatActivity{
         Button grid = (Button) findViewById(R.id.grid_button);
         grid.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                extraController = new ExtraController(num);
-                startActivity(new Intent(getApplicationContext(), ExtraActivity.class));
+                //extraController = new ExtraController(num);
+                //startActivity(new Intent(getApplicationContext(), ExtraActivity.class));
             }
         });
 
     }
 
     //Getters for both controllers.
-    public static ControlController getControlController() {return controlController;}
-    public static ExtraController getExtraController() {return extraController;}
+    //public static ControlController getControlController() {return controlController;}
+    //public static ExtraController getExtraController() {return extraController;}
 
 }
